@@ -1,0 +1,20 @@
+{
+  "name": "zsd-android-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ZSD native Android storefront powered by WooCommerce Store API",
+  "scripts": {
+    "build": "esbuild www/app.js --bundle --format=esm --outfile=www/bundle.js",
+    "android:add": "cap add android",
+    "android:sync": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "7.4.3",
+    "@capacitor/browser": "7.0.2",
+    "@capacitor/core": "7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "7.4.3",
+    "esbuild": "^0.25.0"
+  }
+}
