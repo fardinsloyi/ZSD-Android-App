@@ -1,1 +1,66 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="اپلیکیشن رسمی فروشگاه ZSD">
+  <title>ZSD | فروشگاه گیمینگ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">Z</div>
+        <div><strong>ZSD</strong><small>GAME STORE</small></div>
+      </div>
+      <button class="icon-btn" id="accountBtn" aria-label="حساب کاربری">♙</button>
+    </header>
 
+    <main>
+      <section class="hero">
+        <div class="hero-glow"></div>
+        <div class="hero-copy">
+          <span class="eyebrow">فروشگاه رسمی ZSD</span>
+          <h1>لِوِل بعدی<br><em>از اینجا شروع میشه</em></h1>
+          <p>خرید سریع و مطمئن محصولات گیمینگ</p>
+          <button class="gold-btn" id="browseBtn">مشاهده محصولات <span>←</span></button>
+        </div>
+        <div class="hero-orb"><b>Z</b><span>LEGENDARY<br>STORE</span></div>
+      </section>
+
+      <section class="section-head">
+        <div><span class="eyebrow">BROWSE</span><h2>دسته‌بندی‌ها</h2></div>
+        <button class="text-btn" id="allCategories">همه</button>
+      </section>
+      <div class="category-row" id="categories">
+        <div class="skeleton-chip"></div><div class="skeleton-chip"></div><div class="skeleton-chip"></div>
+      </div>
+
+      <section class="section-head product-heading" id="productsSection">
+        <div><span class="eyebrow">LATEST DROP</span><h2 id="productsTitle">محصولات فروشگاه</h2></div>
+        <span class="live-dot">به‌روز</span>
+      </section>
+      <div class="search-wrap">
+        <span>⌕</span><input id="searchInput" type="search" placeholder="جستجوی محصول..." autocomplete="off">
+        <button id="clearSearch" aria-label="پاک کردن">×</button>
+      </div>
+      <div class="product-grid" id="products">
+        <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+      </div>
+      <button class="load-more" id="loadMore" hidden>نمایش محصولات بیشتر</button>
+      <div class="empty" id="emptyState" hidden>محصولی پیدا نشد.</div>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-tab="home"><span>⌂</span><small>خانه</small></button>
+      <button class="nav-item" data-tab="categories"><span>▦</span><small>دسته‌ها</small></button>
+      <button class="nav-item" data-tab="orders"><span>▤</span><small>سفارش‌ها</small></button>
+      <button class="nav-item" data-tab="account"><span>♙</span><small>حساب من</small></button>
+    </nav>
+    <div class="toast" id="toast"></div>
+  </div>
+  <script type="module" src="bundle.js"></script>
+</body>
+</html>
